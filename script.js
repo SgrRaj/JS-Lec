@@ -326,17 +326,17 @@
 
  //!     3.FUNCTION EXPRESSION  : used to call Anonymous function.
 
-                console.log(displayName); //undefined 
-                displayName();    //error 
+                // console.log(displayName); //undefined 
+                // displayName();    //error 
                 
-                var displayName=function(){
-                        console.log("i am sagar doe");
+                // var displayName=function(){
+                //         console.log("i am sagar doe");
                         
-                };
+                // };
 
-                console.log(displayName); //it print full function with body
+                // console.log(displayName); //it print full function with body
 
-                displayName();   // i am sagar doe
+                // displayName();   // i am sagar doe
 
 
                 
@@ -344,12 +344,86 @@
 
 
           //!     4.RETURN TYPE FUNCTION
+                //         function sum(){
+                //                 let n1=10;
+                //                 let n2=20;
+                //                 let result=n1+n2;
+                //                 return result;
+
+                //         }
+                //        let res= sum();
+                //          console.log(res);
+
+
+
           //!     5.FUNCTION WITH PARAMETERS 
+        //             //  here, fname and lname are parameters
+        //                 function getFullName(fname,lname){
+        //                         console.log(`My name is ${fname} ${lname}`);
+                                
+        //                 }
+
+        //                 getFullName("Sagar","Raj");
+
+        // // DEFAULT PARAMETER
+        //          const multiply=function (n1=1,n2=1){
+        //                 console.log(n1*n2);
+                        
+        //          };
+                 
+        //          multiply();  
+        //          multiply(10,20);
+        //        multiply(10);
           //!     6.REST PARAMETER FUNCTION 
-          //!     7.LIFE 
+
+               // NOTE:- rest parameter must be the last parameter in the parameter  list 
+                        // function userLists(user1,...rest){
+                        //         console.log(user1);   // Ram     // stored copy karke 
+                        //         console.log(rest);     //['Raj', 'Ranjan', 'Singh']    //rest all argument 
+                                
+                        //         console.log(arguments); // ['Sagar', 'Raj', 'Ranjan', 'Singh']  // all arguments 
+
+                                
+                        // }
+
+                        // userLists("Sagar","Raj","Ranjan","Singh");
+
+
+          //!     7.IIFE   : Immediately invoked function expression 
+
+        //                         (function(){
+        //                                 console.log("IIFE");
+        //                                 // bich m koi code ni likh skte .
+        //                         })();
+
+
+        //       let val=(function(){
+        //                      console.log("IIFE");
+        //                      // bich m koi code ni likh skte .
+        //                      return n1+n2;
+        //              })(10,20);
+
+        //                      console.log(val);
+                                
+                                
+
           //!     8.HIGHER ORDER AND CALLBACK FUNCTION 
-          //!     9.ARROW FUNCTION 
-          //!     10.CONSTRUCTOR FUNCTION 
+                     //sum is a callback function : a function which is passes as an arguments 
+                        function sum(n1,n2){
+                                console.log(n1+n2);
+                                
+                        }
+                     // calculate is HOF : a funtion which accepts another funation as an argument
+                        function calculate(x,y,fun){
+                                fun(x,y);
+                        }
+
+                        calculate(10,20,sum);
+
+
+          //!     9. NESTED FUNCTION
+          //!     10.ARROW FUNCTION 
+          //!     11.CONSTRUCTOR FUNCTION 
                 
             
 
