@@ -409,16 +409,16 @@
 
           //!     8.HIGHER ORDER AND CALLBACK FUNCTION 
                      //sum is a callback function : a function which is passes as an arguments 
-                        function sum(n1,n2){
-                                console.log(n1+n2);
+                        // function sum(n1,n2){
+                        //         console.log(n1+n2);
                                 
-                        }
+                      //  }
                      // calculate is HOF : a funtion which accepts another funation as an argument
-                        function calculate(x,y,fun){
-                                fun(x,y);
-                        }
+                        // function calculate(x,y,fun){
+                        //         fun(x,y);
+                        // }
 
-                        calculate(10,20,sum);
+                        // calculate(10,20,sum);
 
 
           //!     9. NESTED FUNCTION : function inside another function 
@@ -539,18 +539,13 @@
                          //way 7  -->            ({name : "Sagar Raj"})     ---- esme ( ) jruri hona chahiye 
                            let a7= () => ({name : "Sagar Raj"})
                        console.log(a7());
-
-
-
-                       
-
-
-                       
+             
 
 
           //!     11.CONSTRUCTOR FUNCTION 
                 
             
+
 
 
         
@@ -564,5 +559,14 @@
             
             
             
+
+
+
+
+
+
+
+
+
 
 
