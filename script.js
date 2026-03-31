@@ -539,34 +539,12 @@
                          //way 7  -->            ({name : "Sagar Raj"})     ---- esme ( ) jruri hona chahiye 
                            let a7= () => ({name : "Sagar Raj"})
                        console.log(a7());
-             
+                
+
 
 
           //!     11.CONSTRUCTOR FUNCTION 
                 
             
 
-
-
         
-                
-                
-                
-            
-            
-
-
-            
-            
-            
-
-
-
-
-
-
-
-
-
-
-
