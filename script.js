@@ -421,8 +421,133 @@
                         calculate(10,20,sum);
 
 
-          //!     9. NESTED FUNCTION
-          //!     10.ARROW FUNCTION 
+          //!     9. NESTED FUNCTION : function inside another function 
+                        // function parent(){
+                        //         let money =1000;
+                        //         console.log(money);
+
+                        //         function child(){
+                        //                 let savings =500;
+                        //                 console.log(savings);
+                                        
+                        //         }
+
+                        //         child();
+                                
+                        // }
+                        // parent();
+
+             //   Example 2:
+
+                //   function parent(){
+                //                 let money =1000;
+                //                 console.log(money);
+
+                //                 function child(){
+                //                         let savings =500;
+                //                         console.log(savings+money);
+                                        
+                //                 }
+
+                //                 child();
+                                
+                //         }
+                //         parent();
+
+
+        //Example 3
+
+                         function parent(){
+                                let money =1000;
+                                console.log(money);
+
+                                function child(){
+                                        let savings =500;
+                                        console.log(savings+money);
+                                        
+                                }
+
+                               return  child;
+                                
+                        }
+                      let val=  parent();
+                         console.log(val);
+                         val();
+                         
+                //CLOSURE : it is a memory which is created whenever child function access the property of parents function 
+
+                // LEXICAL SCOPING  : the ability of JS engine to search a variable outside of its local scope 
+
+
+                //! closure and lexical scoping example
+
+                // funtion counter(){
+                //         let count=0;
+                //         return function(){
+                //                 counter++;
+                //                 console.log("count is ",count);
+                                
+                //         };
+                // }
+
+                // let val1=counter();
+                // val1();
+                // val1();
+                // val1();
+                // val1();
+                // val1();
+                
+
+          //!     10.ARROW FUNCTION   : introduced in ES6 
+                        //way 1
+
+                        let a1=() => {
+                                console.log("i am arrow function 1");
+                                
+                        }
+                        a1();
+                        
+                        //way 2
+                         let a2= _  => {
+                                console.log("i am arrow function 2");
+                                
+                        }
+                        a2();
+
+                         //way 3               agr ek parameter ho to bina ( ) bhi kam kar jayega but ek se jyda ho to () lgana pdega.
+                         let a3= n1 => {
+                                console.log("i am arrow function 3");
+                                
+                        }
+                        a3();
+
+                         //way 4              agr one line of code hoga to without using { } likh skte hai 
+                         let a4= ()  =>  console.log("i am arrow function 4");
+                        a4();
+
+                         //way 5  --> Explicit return           agr return use hoga to { } hona jruri hai ,kyu na ek line ka code rhe fir bhi use krenge 
+                         let a5= () => {
+                                return "i am Explicit return";
+                                
+                        }
+                       console.log(a5());
+
+                         //way 6  -->implicit  return          
+                           let a6= () =>  "i am Implicit  return";
+                       console.log(a6());
+
+                         //way 7  -->            ({name : "Sagar Raj"})     ---- esme ( ) jruri hona chahiye 
+                           let a7= () => ({name : "Sagar Raj"})
+                       console.log(a7());
+
+
+
+                       
+
+
+                       
+
+
           //!     11.CONSTRUCTOR FUNCTION 
                 
             
