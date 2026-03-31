@@ -457,22 +457,22 @@
 
         //Example 3
 
-                         function parent(){
-                                let money =1000;
-                                console.log(money);
+                //          function parent(){
+                //                 let money =1000;
+                //                 console.log(money);
 
-                                function child(){
-                                        let savings =500;
-                                        console.log(savings+money);
+                //                 function child(){
+                //                         let savings =500;
+                //                         console.log(savings+money);
                                         
-                                }
+                //                 }
 
-                               return  child;
+                //                return  child;
                                 
-                        }
-                      let val=  parent();
-                         console.log(val);
-                         val();
+                //         }
+                //       let val=  parent();
+                //          console.log(val);
+                //          val();
                          
                 //CLOSURE : it is a memory which is created whenever child function access the property of parents function 
 
