@@ -541,7 +541,7 @@
                        console.log(a7());
                 
 
-
+//
 
           //!     11.CONSTRUCTOR FUNCTION 
                 
