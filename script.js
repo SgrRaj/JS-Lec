@@ -496,8 +496,10 @@
                 // val1();
                 // val1();
                 // val1();
+                // val1();
+                // val1();
                 
-
+                
           //!     10.ARROW FUNCTION   : introduced in ES6 
                         //way 1
 
