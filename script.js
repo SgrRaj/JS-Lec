@@ -627,8 +627,19 @@ console.log("filtered value ----> ",val3); //[20,30,55]
 
 //! arr.find ( callback )
 
-let val4=arr5.find((ele)=> ele ===30)
-console.log(val4);
+let val4=arr5.find((ele)=> {
+       return ele ===30
+});
+console.log("element found ---->",val4);
+
+
+
+//! arr.findIndex ( callback )
+
+let val5=arr5.findIndex((ele)=> {
+       return ele ===5
+});
+console.log("element index is  ---->",val5);
 
 
         
