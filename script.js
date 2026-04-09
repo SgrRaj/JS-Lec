@@ -616,30 +616,78 @@
 //  kuch rah gya hai 
 
 
-//! arr.filter( callback )
-const arr5=[10,5,20,12,30,55];
-let val3 = arr5.filter(( ele )=>{
-        return ele>15;
+// //! arr.filter( callback )
+// const arr5=[10,5,20,12,30,55];
+// let val3 = arr5.filter(( ele )=>{
+//         return ele>15;
+// });
+
+// console.log("filtered value ----> ",val3); //[20,30,55]
+
+
+// //! arr.find ( callback )
+
+// let val4=arr5.find((ele)=> {
+//        return ele ===30
+// });
+// console.log("element found ---->",val4);
+
+
+
+// //! arr.findIndex ( callback )
+
+// let val5=arr5.findIndex((ele)=> {
+//        return ele ===5
+// });
+// console.log("element index is  ---->",val5);
+
+
+// //! arr.reduce ( callback,accumulatorValue )
+
+// const arr6=[10,20,30,40,50];
+
+// let val6=arr6.reduce((acc,ele,idx,arr)=>{
+//         return acc+ele;
+
+// },0);
+
+// console.log("sum is ------->",val6);
+
+const employees=[
+        {id:1,ename:"Sagar" ,des:"Dev" ,sal:50000},
+        {id:2,ename:"Raj" ,des:"tester" ,sal:30000},
+        {id:3,ename:"Prince" ,des:"Dev" ,sal:80000},
+        {id:4,ename:"ram" ,des:"tester" ,sal:20000},
+]
+
+ let NoDev = employees.filter(( ele )=>{
+       
+return ele.des === "Dev";
+        
 });
 
-console.log("filtered value ----> ",val3); //[20,30,55]
-
-
-//! arr.find ( callback )
-
-let val4=arr5.find((ele)=> {
-       return ele ===30
+let NoTester = employees.filter(( ele )=>{
+       
+return ele.des === "tester";
+        
 });
-console.log("element found ---->",val4);
+
+const devlopersSal =NoDev.reduce((acc,ele)=>acc + ele.sal,0);
+const testerSal = NoTester.reduce((acc,ele)=>acc + ele.sal,0);
 
 
+console.log("total no of dev ----> ",NoDev); 
+console.log("total no of dev ----> ",NoTester); 
 
-//! arr.findIndex ( callback )
+console.log("avg sal of developer ",devlopersSal/NoDev.length);
+console.log("avg sal of developer ",testerSal/NoTester.length);
 
-let val5=arr5.findIndex((ele)=> {
-       return ele ===5
-});
-console.log("element index is  ---->",val5);
+
+//! arr.sort()
+
+//! Lexographical sorting 
+
+
 
 
         
