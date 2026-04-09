@@ -503,52 +503,132 @@
           //!     10.ARROW FUNCTION   : introduced in ES6 
                         //way 1
 
-                        let a1=() => {
-                                console.log("i am arrow function 1");
+//                         let a1=() => {
+//                                 console.log("i am arrow function 1");
                                 
-                        }
-                        a1();
+//                         }
+//                         a1();
                         
-                        //way 2
-                         let a2= _  => {
-                                console.log("i am arrow function 2");
+//                         //way 2
+//                          let a2= _  => {
+//                                 console.log("i am arrow function 2");
                                 
-                        }
-                        a2();
+//                         }
+//                         a2();
 
-                         //way 3               agr ek parameter ho to bina ( ) bhi kam kar jayega but ek se jyda ho to () lgana pdega.
-                         let a3= n1 => {
-                                console.log("i am arrow function 3");
+//                          //way 3               agr ek parameter ho to bina ( ) bhi kam kar jayega but ek se jyda ho to () lgana pdega.
+//                          let a3= n1 => {
+//                                 console.log("i am arrow function 3");
                                 
-                        }
-                        a3();
+//                         }
+//                         a3();
 
-                         //way 4              agr one line of code hoga to without using { } likh skte hai 
-                         let a4= ()  =>  console.log("i am arrow function 4");
-                        a4();
+//                          //way 4              agr one line of code hoga to without using { } likh skte hai 
+//                          let a4= ()  =>  console.log("i am arrow function 4");
+//                         a4();
 
-                         //way 5  --> Explicit return           agr return use hoga to { } hona jruri hai ,kyu na ek line ka code rhe fir bhi use krenge 
-                         let a5= () => {
-                                return "i am Explicit return";
+//                          //way 5  --> Explicit return           agr return use hoga to { } hona jruri hai ,kyu na ek line ka code rhe fir bhi use krenge 
+//                          let a5= () => {
+//                                 return "i am Explicit return";
                                 
-                        }
-                       console.log(a5());
+//                         }
+//                        console.log(a5());
 
-                         //way 6  -->implicit  return          
-                           let a6= () =>  "i am Implicit  return";
-                       console.log(a6());
+//                          //way 6  -->implicit  return          
+//                            let a6= () =>  "i am Implicit  return";
+//                        console.log(a6());
 
-                         //way 7  -->            ({name : "Sagar Raj"})     ---- esme ( ) jruri hona chahiye 
-                           let a7= () => ({name : "Sagar Raj"})
-                       console.log(a7());
+//                          //way 7  -->            ({name : "Sagar Raj"})     ---- esme ( ) jruri hona chahiye 
+//                            let a7= () => ({name : "Sagar Raj"})
+//                        console.log(a7());
                 
 
-//
-//
-//
+
 
           //!     11.CONSTRUCTOR FUNCTION 
                 
             
+//! Object destructuring 
+// let employee1={
+//         id:1,
+//         ename:"Sagar",
+//         company:"HCL",
+//        // salary:50000,
+// };
+
+// let {ename:empName,
+//         salary:sal=null,
+//         designation = "Not Available"
+// } = employee1;
+
+// console.log(empName,sal,designation);
+
+
+
+
+// let employee2={
+//         fullname:{
+//                 firstname:"Sagar",
+//                 lastname:"Raj"
+//         },
+//         age:25,
+//         addrss: {
+//                 city:"Delhi",
+//                 stret:"Block B",
+//                 pin:823003,
+//         },
+// };
+
+
+// kuch baki h likhna 
+
+
+//! ARRAYS
+
+//! There are 2 ways to create an array 
+
+// //1)USING ARRAY LITERALS
+//         const arr1=[10]
+//         console.log(arr1);
+        
+
+// //2)USING ARRAY CONSTRUCTOR
+//         const arr2=new Array(10);
+//         console.log(arr2); // defines length of an array
+        
+
+//! ARRAY MATHODS
+
+//         const arr1=[10,20,30,40,50,60];
+//         console.log(arr1);
+
+// //! arr.push(new elements)
+
+// // Appends new elements to the end of an array, and returns the new length of the array
+
+// let newLength1=arr1.push(70,80,90);
+// console.log(arr1);
+// console.log("new length is",newLength1);
+
+
+
+
+//  kuch rah gya hai 
+
+
+//! arr.filter( callback )
+const arr5=[10,5,20,12,30,55];
+let val3 = arr5.filter(( ele )=>{
+        return ele>15;
+});
+
+console.log("filtered value ----> ",val3); //[20,30,55]
+
+
+//! arr.find ( callback )
+
+let val4=arr5.find((ele)=> ele ===30)
+console.log(val4);
+
 
         
