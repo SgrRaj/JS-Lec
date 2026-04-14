@@ -681,13 +681,13 @@ console.log("total no of dev ----> ",NoTester);
 
 console.log("avg sal of developer ",devlopersSal/NoDev.length);
 console.log("avg sal of developer ",testerSal/NoTester.length);
-//
-//
+
 
 //! arr.sort()
 
 //! Lexographical sorting 
-
+//
+//
 
 
 
