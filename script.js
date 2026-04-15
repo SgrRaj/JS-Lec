@@ -686,9 +686,13 @@ console.log("avg sal of developer ",testerSal/NoTester.length);
 //! arr.sort()
 
 //! Lexographical sorting 
-//
+
+
 //
 
 
 
         
+
+
+
