@@ -665,7 +665,7 @@ const employees=[
 return ele.des === "Dev";
         
 });
-
+//
 let NoTester = employees.filter(( ele )=>{
        
 return ele.des === "tester";
@@ -688,7 +688,7 @@ console.log("avg sal of developer ",testerSal/NoTester.length);
 //! Lexographical sorting 
 
 
-//
+
 
 
 
