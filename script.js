@@ -669,7 +669,7 @@ return ele.des === "Dev";
 let NoTester = employees.filter(( ele )=>{
        
 return ele.des === "tester";
-        
+        //
 });
 
 const devlopersSal =NoDev.reduce((acc,ele)=>acc + ele.sal,0);
