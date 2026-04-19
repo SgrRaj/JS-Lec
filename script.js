@@ -645,6 +645,8 @@
 // //! arr.reduce ( callback,accumulatorValue )
 
 // const arr6=[10,20,30,40,50];
+//
+//
 
 // let val6=arr6.reduce((acc,ele,idx,arr)=>{
 //         return acc+ele;
@@ -665,11 +667,11 @@ const employees=[
 return ele.des === "Dev";
         
 });
-//
+
 let NoTester = employees.filter(( ele )=>{
        
 return ele.des === "tester";
-        //
+        
 });
 
 const devlopersSal =NoDev.reduce((acc,ele)=>acc + ele.sal,0);
